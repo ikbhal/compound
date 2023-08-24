@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Compound Interest Calculator</h1>
+        <form id="calculator-form">
+            <label for="initial-amount">Initial Amount:</label>
+            <input type="number" id="initial-amount" step="any" required>
+            
+            <label for="additional-contributions">Additional Contributions:</label>
+            <input type="number" id="additional-contributions" step="any" required>
+            
+            <label for="total-years">Total Years:</label>
+            <input type="number" id="total-years" step="1" required>
+            
+            <label for="annual-growth">Annual Growth Rate (%):</label>
+            <input type="number" id="annual-growth" step="any" required>
+            
+            <button type="submit">Calculate</button>
+        </form>
+        
+        <div id="result" class="hidden">
+            <h2>Result:</h2>
+            <p>The compounded amount after <span id="years-display"></span> years will be: <span id="compounded-amount"></span></p>
+        </div>
+    </div>
+</body>
+</html>
